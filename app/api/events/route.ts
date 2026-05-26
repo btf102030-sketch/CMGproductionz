@@ -1,17 +1,7 @@
-export const dynamic = 'force-dynamic';
-
 import { NextResponse } from 'next/server';
-import { prisma } from '@/lib/prisma';
+import { events } from '@/lib/data/events';
 
 export async function GET() {
-  try {
-    const events = await prisma.event.findMany({
-      orderBy: { date: 'asc' },
-      where: { status: 'UPCOMING' },
-    });
-    return NextResponse.json({ events: events ?? [] });
-  } catch (error: any) {
-    console.error('Error fetching events:', error);
-    return NextResponse.json({ events: [] });
-  }
+  const upcoming = events.filter((e) => e.status === 'UPCOMING');
+  return NextResponse.json({ events: upcoming });
 }

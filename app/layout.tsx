@@ -22,7 +22,7 @@ export const metadata = {
     description: 'The best truck meets and shows in Northeast Alabama.',
     images: ['/og-image.png'],
   },
-  metadataBase: new URL(process.env.NEXTAUTH_URL || 'http://localhost:3000'),
+  metadataBase: new URL('https://www.cmgproductionz.org'),
 };
 
 export default function RootLayout({
@@ -32,9 +32,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className="dark">
-      <head>
-        <script src="https://apps.abacus.ai/chatllm/appllm-lib.js"></script>
-      </head>
       <body
         className={`${dmSans.variable} ${jakartaSans.variable} ${jetbrainsMono.variable} font-sans bg-[hsl(0,0%,5%)] text-white`}
       >

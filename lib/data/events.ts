@@ -1,0 +1,47 @@
+// Edit this file to update events on the site.
+// imageUrl: use '/flyer.png' or add images to /public/images/ and reference as '/images/filename.jpg'
+
+export const events = [
+  {
+    id: 'evt-truck-meet-may-2026',
+    title: 'CMG Truck Meet',
+    description: 'Come out for our biggest truck meet of the spring! VIP parking is $10 and enters you to win awards. Spectator parking is FREE. All trucks welcome - lifted, stock, classic, custom, diesel, 4x4 & more!',
+    date: new Date('2026-05-30T18:00:00').toISOString(),
+    time: '6:00 PM - 9:00 PM',
+    location: 'Gadsden, AL',
+    address: '530 E Meighan Blvd, Gadsden, AL 35903',
+    imageUrl: '/flyer.png',
+    price: 'VIP $10 / Spectator FREE',
+    featured: true,
+    category: 'TRUCK_MEET',
+    status: 'UPCOMING',
+  },
+  {
+    id: 'evt-summer-showdown-2026',
+    title: 'Summer Showdown Truck Show',
+    description: 'The ultimate summer truck show is here! Multiple award categories, food vendors, live music, and the best trucks in Northeast Alabama on display.',
+    date: new Date('2026-07-12T17:00:00').toISOString(),
+    time: '5:00 PM - 10:00 PM',
+    location: 'Albertville, AL',
+    address: 'Albertville Fairgrounds, Albertville, AL 35950',
+    imageUrl: '/flyer.png',
+    price: 'VIP $15 / Spectator $5',
+    featured: true,
+    category: 'TRUCK_SHOW',
+    status: 'UPCOMING',
+  },
+  {
+    id: 'evt-night-cruise-2026',
+    title: 'Night Cruise & Meet',
+    description: 'Evening cruise through downtown followed by a laid-back truck meet under the lights. All vehicles welcome. Awards for Best Lifted, Best Custom, and Best Overall.',
+    date: new Date('2026-08-23T19:00:00').toISOString(),
+    time: '7:00 PM - 11:00 PM',
+    location: 'Fort Payne, AL',
+    address: 'DeKalb Centre, Fort Payne, AL 35967',
+    imageUrl: '/flyer.png',
+    price: 'FREE Entry',
+    featured: false,
+    category: 'TRUCK_MEET',
+    status: 'UPCOMING',
+  },
+];

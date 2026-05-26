@@ -1,0 +1,53 @@
+// Edit this file to update merchandise on the site.
+// Add product images to /public/images/ and reference them as '/images/filename.jpg'
+
+export const merchItems = [
+  {
+    id: 'merch-cmg-tshirt',
+    name: 'CMG Productionz Logo Tee',
+    description: 'Black cotton t-shirt with the official CMG Productionz logo. Available in S-3XL.',
+    price: 25.00,
+    imageUrl: '/images/merch-tshirt.jpg',
+    category: 'APPAREL',
+    inStock: true,
+    featured: true,
+    createdAt: new Date('2025-01-01').toISOString(),
+    updatedAt: new Date('2025-01-01').toISOString(),
+  },
+  {
+    id: 'merch-cmg-hoodie',
+    name: 'CMG Productionz Hoodie',
+    description: 'Premium black hoodie with embroidered CMG logo. Perfect for truck meet nights.',
+    price: 45.00,
+    imageUrl: '/images/merch-hoodie.jpg',
+    category: 'APPAREL',
+    inStock: true,
+    featured: true,
+    createdAt: new Date('2025-01-02').toISOString(),
+    updatedAt: new Date('2025-01-02').toISOString(),
+  },
+  {
+    id: 'merch-cmg-sticker-pack',
+    name: 'CMG Sticker Pack',
+    description: 'Pack of 5 die-cut vinyl stickers featuring CMG Productionz designs. Weatherproof.',
+    price: 10.00,
+    imageUrl: '/images/merch-stickers.jpg',
+    category: 'STICKERS',
+    inStock: true,
+    featured: true,
+    createdAt: new Date('2025-01-03').toISOString(),
+    updatedAt: new Date('2025-01-03').toISOString(),
+  },
+  {
+    id: 'merch-cmg-decal',
+    name: 'CMG Window Decal',
+    description: 'Large vinyl window decal for your truck. Show your CMG pride on the road.',
+    price: 8.00,
+    imageUrl: '/images/merch-decal.jpg',
+    category: 'STICKERS',
+    inStock: true,
+    featured: false,
+    createdAt: new Date('2025-01-04').toISOString(),
+    updatedAt: new Date('2025-01-04').toISOString(),
+  },
+];

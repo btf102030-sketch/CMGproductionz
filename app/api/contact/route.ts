@@ -1,17 +1,11 @@
-export const dynamic = 'force-dynamic';
-
 import { NextResponse } from 'next/server';
-import { prisma } from '@/lib/prisma';
 
 export async function POST(request: Request) {
   try {
     const body = await request?.json?.();
     const name = body?.name ?? '';
     const email = body?.email ?? '';
-    const phone = body?.phone ?? '';
-    const subject = body?.subject ?? '';
     const message = body?.message ?? '';
-    const eventType = body?.eventType ?? 'GENERAL';
 
     if (!name || !email || !message) {
       return NextResponse.json(
@@ -20,22 +14,13 @@ export async function POST(request: Request) {
       );
     }
 
-    const submission = await prisma.contactSubmission.create({
-      data: {
-        name,
-        email,
-        phone,
-        subject,
-        message,
-        eventType,
-      },
-    });
-
-    return NextResponse.json({ success: true, id: submission?.id ?? '' });
-  } catch (error: any) {
-    console.error('Error saving contact:', error);
+    // Contact submissions are acknowledged but not stored.
+    // To receive emails, sign up at formspree.io, create a form,
+    // and replace this with a fetch to your Formspree endpoint.
+    return NextResponse.json({ success: true });
+  } catch {
     return NextResponse.json(
-      { error: 'Failed to save message.' },
+      { error: 'Failed to send message.' },
       { status: 500 }
     );
   }
