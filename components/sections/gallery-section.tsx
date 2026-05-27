@@ -63,7 +63,7 @@ export function GallerySection() {
           </h2>
           <div className="red-line w-24 mx-auto mb-4" />
           <p className="text-gray-400 text-sm max-w-lg mx-auto">
-            Highlights from past CMG Productionz truck meets and shows.
+            Highlights from past CMG Productionz truck meets.
           </p>
         </motion.div>
 

@@ -41,8 +41,8 @@ export function AboutSection() {
           >
             <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-gray-900">
               <Image
-                src="/images/crowd-truck-show.jpg"
-                alt="Crowd enjoying a CMG Productionz truck show event"
+                src="public\images\SilvTaco001_white_aura.png"
+                alt="Silver Taco with White Aura"
                 fill
                 className="object-cover"
               />
