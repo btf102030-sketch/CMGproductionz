@@ -41,7 +41,7 @@ export function AboutSection() {
           >
             <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-gray-900">
               <Image
-                src="public\images\SilvTaco001_white_aura.png"
+                src="/images/SilvTaco001_white_aura.png"
                 alt="Silver Taco with White Aura"
                 fill
                 className="object-cover"
